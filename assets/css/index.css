@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Varela+Round&display=swap');
+
+html{
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Sans', Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    word-spacing: 5px;
+}
+
+#navigation {
+    width: 100%;
+    height: fit-content;
+    background-color: azure;
+    box-shadow: 3px 3px 30px gray;
+    position: sticky;
+}
+
+#navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#navigation ul li {
+    float: left;
+}
+
+#navigation ul li a {
+	display: block;
+	text-align: center;
+    text-decoration: none;
+    margin: 15px 28px;
+    color: #343533;
+    font-size: 16px;
+}
+
+#navigation ul li:hover a:not(.active){
+    font-weight: bold;
+}
+
+#navigation ul li.active-tab {
+    background-color: #343533;
+}
+
+#navigation ul li.active-tab a {
+    color: azure;
+    font-weight: bold;
+}
+
+section{
+    margin:0;
+    width: 100%;
+    height: fit-content;
+    padding: 0px 30px 0px 30px;
+}
+
+#who-am-i{
+    display: flex;
+    padding: 70px 0px 50px 0px;
+    box-sizing: border-box;
+    align-items: center;
+    background: linear-gradient(to top, #343533, #5d5d5d);
+}
+
+#who-am-i #introduction {
+    margin-left: 50px;
+    width: 60%;
+    height: 100%;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#who-am-i #images {
+    width: 40%;
+    height: fit-content;
+    margin-right: 30px;
+}
+
+#who-am-i #introduction p .name {
+    font-size: 50px;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+#who-am-i #images img{
+    height: 250px;
+    border-radius: 50%;
+    margin-left: 20%;
+}
+
+#skills{
+    padding: 50px 0px 50px 0px;
+    display: block;
+}
+
+#skills-tb{
+    display: grid;
+    width: 70%;
+    padding: 30px;
+    margin: auto;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 75px 75px;
+    row-gap: 30px;
+    box-sizing: border-box;
+}
+
+#skills-tb span {
+    font-size: 20px;
+    text-align: center;
+}
+
+#skills-tb div {
+    height: 60px;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+}
+
