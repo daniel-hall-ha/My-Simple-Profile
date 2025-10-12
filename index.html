@@ -10,10 +10,10 @@
     <body>
         <div id="navigation">
             <ul>
-                <li class="active-tab"><a href="#whoami" class="active">Who Am I?</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#portfolios">Portfolios</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="active-tab"><a href="#who-am-i" class="active scroll-link">Who Am I?</a></li>
+                <li><a href="#certifications" class="scroll-link">Certifications</a></li>
+                <li><a href="#portfolios" class="scroll-link">Portfolios</a></li>
+                <li><a href="#contact" class="scroll-link">Contact</a></li>
             </ul>
         </div>
         <section id="who-am-i">
@@ -78,34 +78,34 @@
 
             <div id="certifications-container">
                 <div id="certifications-list">
-                    <div class="cert active">
+                    <div class="cert active" data-id="ibm-js">
                         <div class="cert-label">
                             IBM Full Stack Javascript Developer
                         </div>
                     </div>
-                    <div class="cert">
+                    <div class="cert" data-id="ibm-devops">
                         <div class="cert-label">
                             IBM DevOps Certification
                         </div>
                     </div>
-                    <div class="cert">
+                    <div class="cert" data-id="ibm-java">
                         <div class="cert-label">
                             IBM Java Developer
                         </div>
                     </div>
-                    <div class="cert">
+                    <div class="cert" data-id="google-python-auto">
                         <div class="cert-label">
                             Google Automation With Python
                         </div>
                     </div>
-                    <div class="cert">
+                    <div class="cert" data-id="kode-kloud">
                         <div class="cert-label">
                             DevOps by Kodekloud
                         </div>
                     </div>
                 </div>
                 <div id="certifications-details">
-                    <ul class="course-completion">
+                    <ul id="ibm-js" class="course-completion active" >
                       <li><a href="#" class="completed">Introduction to Software Engineering</a></li>
                       <li><a href="#" class="completed">Introduction to HTML, CSS, & JavaScript</a></li>
                       <li><a href="#">Getting Started with Git and GitHub</a></li>
@@ -118,6 +118,58 @@
                       <li><a href="#">Node.js & MongoDB: Developing Back-end Database Applications</a></li>
                       <li><a href="#">JavaScript Full Stack Capstone Project</a></li>
                       <li><a href="#">Software Developer Career Guide and Interview Preparation</a></li>
+                    </ul>
+                    <ul id="ibm-devops" class="course-completion">
+                        <li><a href="#">Introduction to DevOps</a></li>
+                        <li><a href="#">Introduction to Cloud Computing</a></li>
+                        <li><a href="#">Introduction to Agile Development and Scrum</a></li>
+                        <li><a href="#" class="completed">Introduction to Software Engineering</a></li>
+                        <li><a href="#" class="completed">Getting Started with Git and GitHub</a></li>
+                        <li><a href="#">Hands-on Introduction to Linux Commands and Shell Scripting</a></li>
+                        <li><a href="#">Python for Data Science, AI & Development</a></li>
+                        <li><a href="#">Developing AI Applications with Python and Flask</a></li>
+                        <li><a href="#">Introduction to Containers w/ Docker, Kubernetes & OpenShift</a></li>
+                        <li><a href="#">Application Development using Microservices and Serverless</a></li>
+                        <li><a href="#">Introduction to Test and Behavior Driven Development</a></li>
+                        <li><a href="#">Continuous Integration and Continuous Delivery (CI/CD)</a></li>
+                        <li><a href="#">Application Security for Developers and DevOps Professionals</a></li>
+                        <li><a href="#">Monitoring and Observability for Development and DevOps</a></li>
+                        <li><a href="#">DevOps Capstone Project</a></li>
+                    </ul>
+                    <ul id="ibm-java" class="course-completion">
+                        <li><a href="#" class="completed">Introduction to Software Engineering</a></li>
+                        <li><a href="#" class="completed">Java Programming for Beginners</a></li>
+                        <li><a href="#">Object Oriented Programming in Java</a></li>
+                        <li><a href="#">Java App Development Project: Fundamentals, OOP & File I/O</a></li>
+                        <li><a href="#" class="completed">Introduction to HTML, CSS, & JavaScript</a></li>
+                        <li><a href="#" class="completed">Getting Started with Git and GitHub</a></li>
+                        <li><a href="#">Spring Framework for Java Development</a></li>
+                        <li><a href="#">Java Development with Databases </a></li>
+                        <li><a href="#">Cloud Native, Microservices, Containers, DevOps and Agile</a></li>
+                        <li><a href="#">Java: Design Patterns, Testing, and Deployment</a></li>
+                        <li><a href="#">Java Development Capstone Project</a></li>
+                        <li><a href="#">Generative AI: Elevate your Software Development Career</a></li>
+                        <li><a href="#">Generative AI for Java and Spring Development</a></li>
+                        <li><a href="#">Software Developer Career Guide and Interview Preparation</a></li>
+                    </ul>
+                    <ul id="google-python-auto" class="course-completion">
+                        <li><a href="#" class="completed">Crash Course on Python</a></li>
+                        <li><a href="#" class="completed">Using Python to Interact with the Operating System</a></li>
+                        <li><a href="#" class="completed">Introduction to Git and GitHub</a></li>
+                        <li><a href="#" class="completed">Troubleshooting and Debugging Techniques</a></li>
+                        <li><a href="#">Configuration Management and the Cloud</a></li>
+                        <li><a href="#">Automating Real-World Tasks with Python</a></li>
+                        <li><a href="#">Accelerate Your Job Search with AI</a></li>                        
+                    </ul>
+                    <ul id="kode-kloud" class="course-completion">
+                        <li><a href="#">DevOps Prerequisite Course</a></li>
+                        <li><a href="#">Git Basics for DevOps</a></li>
+                        <li><a href="#">Jenkins for Beginners</a></li>
+                        <li><a href="#">Docker Basics for DevOps</a></li>
+                        <li><a href="#">Kubernetes Basics for DevOps</a></li>
+                        <li><a href="#">Ansible for the Absolute Beginners</a></li>
+                        <li><a href="#">Terraform for the Absolute Beginner with Hands-on Labs</a></li>
+                        <li><a href="#">Python for the Absolute Beginner</a></li>
                     </ul>
                 </div>
             </div>
@@ -155,8 +207,11 @@
 
         </section>
 
-        <footer>
+        <footer id="contact" name="contact">
 
         </footer>
+        <script src="scripts/courseSelector.js"></script>
+        <script src="scripts/scrollSection.js"></script>
+        <script src="scripts/navSelector.js"></script>
     </body>
 </html>
